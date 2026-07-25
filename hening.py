@@ -113,8 +113,8 @@ print(banner)
 while attemps < 100:
     
     print("")
-    username = input("{Fore.CYAN}Enter your username: {Fore.BLACK}")
-    password = input("{Fore.CYAN}Enter your password: {Fore.BLACK}")
+    username = input(f"{Fore.CYAN}Enter your username: {Fore.BLACK}")
+    password = input(f"{Fore.CYAN}Enter your password: {Fore.BLACK}")
 
     if username == 'v3' and password == 'v3':
         break
