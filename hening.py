@@ -93,6 +93,7 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
         threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent,data_type_loader_packet)).start()
 
 #DATA
+attemps = 0
 banner = f"""
 {Fore.WHITE}                             ┐ 
 {Fore.WHITE} ─────┐                     ││  
@@ -108,6 +109,18 @@ banner = f"""
 {Fore.WHITE}⬣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⬣
 """
 print(banner)
+while attemps < 100:
+    
+    print("{Fore.CYAN}")
+    username = input("Enter your username: \033[0m")
+    password = input("Enter your password: \033[0m")
+
+    if username == 'v3' and password == 'v3':
+        break
+    else:
+        print('Incorrect credentials. Check if you have Caps lock on and try again.')
+        attemps += 1
+        continue
 host = ""
 ip = ""
 print(f"{Fore.BLACK}PYF LOAD1-5")
