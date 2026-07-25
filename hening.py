@@ -106,10 +106,9 @@ banner = f"""
 {Fore.WHITE}              ╰────╯                   {Fore.CYAN}                  ────╯╯
 {Fore.CYAN}
 {Fore.WHITE}⬣  Datang tidak untuk mencari nama, hilang bukan untuk dikenang  ⬣
-{Fore.WHITE}⬣         biarkan semua mengalir tanpa beban [anonimous]         ⬣
-{Fore.WHITE}⬣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⬣
-"""
+{Fore.WHITE}⬣         biarkan semua mengalir tanpa beban [anonimous]         ⬣"""
 print(banner)
+print(f"\r\{Fore.WHITE}⬣{'━' * 60}⬣{Fore.RESET}")
 while attemps < 100:
     
     print("")
