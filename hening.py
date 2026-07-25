@@ -109,12 +109,12 @@ banner = f"""
 {Fore.WHITE}⬣         biarkan semua mengalir tanpa beban [anonimous]         ⬣
 """
 print(banner)
-print(f"\r{Fore.WHITE}⬣{'━' * 65}⬣{Fore.RESET}")
+print(f"\r{Fore.WHITE}⬣{'━' * 64}⬣{Fore.RESET}")
 while attemps < 100:
     
     print("")
-    username = input(f"{Fore.CYAN}Enter your username: {Fore.BLACK}")
-    password = input(f"{Fore.CYAN}Enter your password: {Fore.BLACK}")
+    username = input(f"{Fore.WHITE}Enter your username: {Fore.BLACK}")
+    password = input(f"{Fore.WHITE}Enter your password: {Fore.BLACK}")
 
     if username == 'v3' and password == 'v3':
         break
