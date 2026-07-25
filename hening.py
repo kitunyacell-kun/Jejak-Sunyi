@@ -94,6 +94,7 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
 
 #DATA
 attemps = 0
+os.system('clear')
 banner = f"""
 {Fore.WHITE}                             ┐ 
 {Fore.WHITE} ─────┐                     ││  
@@ -111,9 +112,9 @@ banner = f"""
 print(banner)
 while attemps < 100:
     
-    print("{Fore.CYAN}")
-    username = input("Enter your username: \033[0m")
-    password = input("Enter your password: \033[0m")
+    print("")
+    username = input("{Fore.CYAN}Enter your username: {Fore.BLACK}")
+    password = input("{Fore.CYAN}Enter your password: {Fore.BLACK}")
 
     if username == 'v3' and password == 'v3':
         break
